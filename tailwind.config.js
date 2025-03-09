@@ -23,6 +23,8 @@ module.exports = {
         "fade-in-up": "fadeInUp 0.8s ease-out forwards",
         "fade-in": "fadeIn 0.8s ease-out forwards",
         "color-cycle": "colorCycle 10s infinite alternate",
+        float: "float 15s ease-in-out infinite",
+        "pulse-slow": "pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       },
       keyframes: {
         fadeInUp: {
@@ -40,6 +42,13 @@ module.exports = {
           "60%": { color: "#F97316" },
           "80%": { color: "#10B981" },
           "100%": { color: "#6366F1" },
+        },
+        float: {
+          "0%": { transform: "translateY(0px) translateX(0px)" },
+          "25%": { transform: "translateY(-10px) translateX(10px)" },
+          "50%": { transform: "translateY(0px) translateX(20px)" },
+          "75%": { transform: "translateY(10px) translateX(10px)" },
+          "100%": { transform: "translateY(0px) translateX(0px)" },
         },
       },
       textShadow: {
@@ -61,5 +70,8 @@ module.exports = {
     "text-elevate-red",
     "text-elevate-teal",
     "text-elevate-indigo",
+    "animate-fade-in",
+    "opacity-0",
+    "animate-on-scroll",
   ],
 };
