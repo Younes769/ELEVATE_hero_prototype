@@ -158,9 +158,9 @@ export default function HeroSection() {
             </div>
 
             <p className="text-lg max-w-xl mb-12 text-gray-300 leading-relaxed">
-              Join our design challenge where you'll reimagine and transform
-              real brands. Create compelling visual identities that elevate
-              companies to new heights.
+              Join our design challenge where you&apos;ll reimagine and
+              transform real brands. Create compelling visual identities that
+              elevate companies to new heights.
             </p>
 
             <button className="group relative overflow-hidden bg-transparent text-white font-bold py-4 px-10 rounded-full text-lg transition-all duration-500">
