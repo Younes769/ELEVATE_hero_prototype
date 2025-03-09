@@ -1,8 +1,17 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000000;
+  --foreground: #ffffff;
+  --elevate-blue: #3b82f6;
+  --elevate-purple: #8b5cf6;
+  --elevate-pink: #ec4899;
+  --elevate-orange: #f97316;
+  --elevate-green: #10b981;
+  --elevate-yellow: #fbbf24;
+  --elevate-red: #ef4444;
+  --elevate-teal: #14b8a6;
+  --elevate-indigo: #6366f1;
 }
 
 @theme inline {
@@ -14,13 +23,74 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #000000;
+    --foreground: #ffffff;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Custom color classes */
+.text-elevate-blue {
+  color: var(--elevate-blue);
+}
+
+.text-elevate-purple {
+  color: var(--elevate-purple);
+}
+
+.text-elevate-pink {
+  color: var(--elevate-pink);
+}
+
+.text-elevate-orange {
+  color: var(--elevate-orange);
+}
+
+.text-elevate-green {
+  color: var(--elevate-green);
+}
+
+.text-elevate-yellow {
+  color: var(--elevate-yellow);
+}
+
+.text-elevate-red {
+  color: var(--elevate-red);
+}
+
+.text-elevate-teal {
+  color: var(--elevate-teal);
+}
+
+.text-elevate-indigo {
+  color: var(--elevate-indigo);
 }
