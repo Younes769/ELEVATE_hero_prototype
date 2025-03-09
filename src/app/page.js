@@ -110,8 +110,8 @@ export default function Home() {
                       </h3>
                       <p className="text-gray-300 leading-relaxed">
                         Each participant or team is assigned a real company or
-                        enterprise to rebrand. You'll have the opportunity to
-                        reimagine their visual identity from the ground up -
+                        enterprise to rebrand. You&apos;ll have the opportunity
+                        to reimagine their visual identity from the ground up -
                         including logos, color schemes, typography, and brand
                         applications. Push the boundaries of design and showcase
                         your unique creative vision.
